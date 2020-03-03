@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="chat.css">
+
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCLT4M45EfblOREoNwegX-i4JVU2l-oqXg",
+          authDomain: "uke-4-65650.firebaseapp.com",
+          databaseURL: "https://uke-4-65650.firebaseio.com",
+          projectId: "uke-4-65650",
+          storageBucket: "uke-4-65650.appspot.com",
+          messagingSenderId: "983229423703",
+          appId: "1:983229423703:web:4a868a8e73c7edd9d84312",
+          measurementId: "G-K12J7KK9H4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+  </head>
+  <body>
+    <h1>Chat!</h1>
+
+    <div id="divInpt">
+      <input type="text" id="inpNavn" placeholder="Brukernavn">
+      <input type="text" id="inpMeld" placeholder="Skriv melding her">
+      <button type="button" id="btnMeld" onclick="leggtilMeld()">Send!</button>
+      <button type="button" id="btnSlett" onclick="slettHistorikk()">Fjern meldingshistorikk</button>
+    </div>
+    <div id="meldinger"></div>
+    <script src=chat.js></script>
+
+<div class="meldinger">
+
+</div>
+
+  </body>
+</html>

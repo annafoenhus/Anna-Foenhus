@@ -1,0 +1,23 @@
+body{
+  padding: 3%;
+}
+
+#meldinger{
+  font-size: 20px;
+  margin: 4%;
+}
+#fra{
+  background-color: pink;
+  font-size: 20px;
+  padding: 10px;
+}
+#tekst{
+  margin: 10%;
+}
+#mld{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid lightpink 2px;
+  width: 30%;
+  border-radius: 10px;
+}
